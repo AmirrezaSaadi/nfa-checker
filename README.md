@@ -4,9 +4,9 @@ A simple C++ implementation of a Nondeterministic Finite Automaton (NFA) checker
 
 ## Prerequisites
 
-- C++17 compatible compiler (g++, clang, etc.)
-- CMake (version 3.10 or higher)
-- nlohmann-json library
+- [C++17](https://en.cppreference.com/w/cpp/compiler_support/17) compatible compiler (g++, clang, etc.)
+- [CMake](https://cmake.org/) (version 3.10 or higher)
+- [nlohmann-json](https://github.com/nlohmann/json) library
 
 ## Installing nlohmann-json
 
