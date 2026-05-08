@@ -1,0 +1,11 @@
+build/
+
+nfa_checker
+nfa_checker.exe
+
+*.o
+
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
