@@ -59,8 +59,8 @@ From the project root directory:
 
 The program reads data/nfa.json by default. 
 
-Note: This file does not exist in the repository.
-Use data/example_nfa.json as a reference for the correct format. Copy it or create your own:
+> [!NOTE]
+> The `data/nfa.json` file does not exist in the repository by default. You must create or copy it using the example file.
 ```bash
 cp data/example_nfa.json data/nfa.json
 ```
