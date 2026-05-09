@@ -42,7 +42,7 @@ cmake .. && sudo make install
 ## Building the Project
 ```bash
 git clone https://github.com/AmirrezaSaadi/nfa-checker.git
-cd NFA_Checker
+cd nfa-checker
 mkdir build && cd build
 cmake ..
 make
@@ -57,7 +57,7 @@ From the project root directory:
 
 ## JSON File Format
 
-The program reads data/nfa.json by default. 
+The program reads `data/nfa.json` by default. 
 
 > [!NOTE]
 > The `data/nfa.json` file does not exist in the repository by default. You must create or copy it using the example file.
@@ -94,13 +94,12 @@ After building and setting up data/nfa.json, run the program:
 
 Enter a string when prompted. The program will output:
 
-    ACCEPTED - if the string is accepted by the NFA
-
-    REJECTED - if the string is rejected
-
+- **ACCEPTED** - if the string is accepted by the NFA
+- **REJECTED** - if the string is rejected
+   
 ## Project Structure
 ```text
-NFA_Checker/
+nfa-checker/
 ├── src/           # Source files
 ├── include/       # Header files
 ├── data/          # JSON configuration files
