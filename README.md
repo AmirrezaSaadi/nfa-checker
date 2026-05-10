@@ -96,11 +96,6 @@ Enter a string when prompted. The program will output:
 
 - **ACCEPTED** - if the string is accepted by the NFA
 - **REJECTED** - if the string is rejected
-
-## Planned Features
-
-- [ ] **Automatic JSON setup** - Auto-copy `example_nfa.json` to `nfa.json` if missing
-
    
 ## Project Structure
 ```text
@@ -123,3 +118,9 @@ $ ./build/nfa_checker
 Enter string: ab
 REJECTED
 ```
+
+## Planned Features
+
+- [ ] **Automatic JSON setup** - Auto-copy `example_nfa.json` to `nfa.json` if missing
+- [ ] **Support for multiple NFAs** - Load multiple automata from a single file
+- [ ] **JSON validation** - Better error messages for malformed JSON files
