@@ -96,6 +96,11 @@ Enter a string when prompted. The program will output:
 
 - **ACCEPTED** - if the string is accepted by the NFA
 - **REJECTED** - if the string is rejected
+
+## Planned Features
+
+- [ ] **Automatic JSON setup** - Auto-copy `example_nfa.json` to `nfa.json` if missing
+
    
 ## Project Structure
 ```text
