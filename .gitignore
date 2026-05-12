@@ -3,6 +3,8 @@ build/
 nfa_checker
 nfa_checker.exe
 
+data/nfa.json
+
 *.o
 
 CMakeCache.txt

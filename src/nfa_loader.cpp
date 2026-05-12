@@ -1,15 +1,30 @@
 #include "nfa_loader.h"
 #include <nlohmann/json.hpp>
+#include <iostream>
 #include <fstream>
 #include <stdexcept>
 #include <string>
+#include <filesystem>
 
 using json = nlohmann::json;
 using namespace std;
+namespace fs = filesystem;
 
 NFA loadNFA(const string &filename) {
+    string config_file = filename;
+    string example_file = "data/example_nfa.json";
+
+    if (!fs::exists(config_file)) {
+        if (fs::exists(example_file)) {
+            fs::copy(example_file, config_file);
+            cout << "No nfa.json found. Copied example_nfa.json to nfa.json\n";
+        } else {
+            throw runtime_error("Neither " + config_file + " nor " + example_file + " found");
+        }
+    }
+
     NFA nfa;
-    ifstream file(filename);
+    ifstream file(config_file);
 
     if (!file.is_open())
         throw runtime_error("Cannot open file: " + filename);
@@ -49,3 +64,4 @@ NFA loadNFA(const string &filename) {
 
     return nfa;
 }
+
