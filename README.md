@@ -133,4 +133,4 @@ REJECTED
 ### Planned
 - [ ] Support for multiple NFA definitions in one JSON file
 - [ ] Batch testing from file input
-- [ ] **JSON validation** - Better error messages for malformed JSON files
+- [ ] Better error messages for malformed JSON files
