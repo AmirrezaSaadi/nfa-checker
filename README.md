@@ -121,6 +121,6 @@ REJECTED
 
 ## Planned Features
 
-- [ ] **Automatic JSON setup** - Auto-copy `example_nfa.json` to `nfa.json` if missing
+- [x] **Automatic JSON setup** - Auto-copy `example_nfa.json` to `nfa.json` if missing
 - [ ] **Support for multiple NFAs** - Load multiple automata from a single file
 - [ ] **JSON validation** - Better error messages for malformed JSON files
