@@ -119,8 +119,17 @@ Enter string: ab
 REJECTED
 ```
 
-## Planned Features
 
-- [x] **Automatic JSON setup** - Auto-copy `example_nfa.json` to `nfa.json` if missing
-- [ ] **Support for multiple NFAs** - Load multiple automata from a single file
+### Implemented
+- [x] Load NFA from JSON configuration file
+- [x] Parse NFA states, alphabet, transitions
+- [x] Support for epsilon transitions
+- [x] Epsilon closure computation
+- [x] NFA simulation for input string acceptance
+- [x] Automatic fallback to example_nfa.json if nfa.json not found
+- [x] Command line interface
+
+### Planned
+- [ ] Support for multiple NFA definitions in one JSON file
+- [ ] Batch testing from file input
 - [ ] **JSON validation** - Better error messages for malformed JSON files
