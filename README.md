@@ -119,6 +119,7 @@ Enter string: ab
 REJECTED
 ```
 
+## Features
 
 ### Implemented
 - [x] Load NFA from JSON configuration file
